@@ -1,5 +1,5 @@
 # freesurfer_T1_processing
-This repository contains Python scripts to process T1-weighted MRI data into morphometry outputs using FreeSurfer’s recon-all .  The main script automates batch processing of .nii and .nii.gz files in a given folder, handling FreeSurfer subject directory creation, overwrite options, and multithreading.
+This repository contains Python scripts to process T1-weighted MRI data into morphometry outputs using FreeSurfer’s recon-all.  The main script automates batch processing of .nii and .nii.gz files in a given folder, handling FreeSurfer subject directory creation, overwrite options, and multithreading.
 
 
 ## Features
@@ -24,16 +24,16 @@ FreeSurfer installed and sourced (SetUpFreeSurfer.sh).
 ## Input data
 Prepare one T1-weighted NIfTI scan per subject. Including the participant ID in the filename is recommended.
 For example, under the T1 folder:
-'''
+```
 sub001_memprage.nii.gz
 sub002_memprage.nii.gz
-'''
+```
 ## Run the scripts
 
-'''
-python3 freesurfer_T1.py /path/to/T1_directory [--overwrite] [--openmp N]
-python fs2csv.py /path/to/T1_directory
-'''
+```
+python freesurfer_T1.py /path/to/T1_directory [--overwrite] [--openmp N]
+
+```
 
 Arguments:
 
