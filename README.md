@@ -31,13 +31,13 @@ sub002_memprage.nii.gz
 ## Run the scripts
 
 ```
-python freesurfer_T1.py /path/to/T1_directory [--overwrite] [--openmp N]
+python freesurfer_T1_processing.py /path/to/T1_dir [--overwrite] [--openmp N]
 
 ```
 
 Arguments:
 
-t1_dir → Folder containing T1 NIfTI files (*.nii or *.nii.gz).
+T1_dir → Folder containing T1 NIfTI files (*.nii or *.nii.gz).
 
 --overwrite → If a subject folder already exists, remove and re-run.
 
@@ -45,7 +45,7 @@ t1_dir → Folder containing T1 NIfTI files (*.nii or *.nii.gz).
 
 ## Output data
 
-For each T1 file, a new subject directory will be created inside t1_dir containing FreeSurfer’s standard morphometry outputs (surfaces, volumes, stats).
+For each T1 file, a new subject directory will be created inside T1_dir containing FreeSurfer’s standard morphometry outputs (MRI, surf, stats).
 
 
 ## Contact
