@@ -4,15 +4,15 @@ This repository contains Python scripts to process T1-weighted MRI data into mor
 
 ## Features
 
-Automatically finds all .nii and .nii.gz T1 files in a folder.
+- Automatically finds all .nii and .nii.gz T1 files in a folder.
 
-Runs recon-all for each subject.
+- Runs recon-all for each subject.
 
-Smart overwrite handling (--overwrite).
+- Smart overwrite handling (--overwrite).
 
-Uses all available CPU threads minus one by default (configurable with --openmp).
+- Uses all available CPU threads minus one by default (configurable with --openmp).
 
-Reports elapsed time
+- Reports elapsed time
 
 ## Requirements
 
@@ -48,6 +48,7 @@ t1_dir → Folder containing T1 NIfTI files (*.nii or *.nii.gz).
 For each T1 file, a new subject directory will be created inside t1_dir containing FreeSurfer’s standard morphometry outputs (surfaces, volumes, stats).
 
 
-
+## Contact
+If you have any question, feel free to reach out.
 
 
